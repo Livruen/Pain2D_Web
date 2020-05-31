@@ -1,0 +1,21 @@
+---
+---
+
+
+# {.tabset}
+
+## En
+ 
+ <h1> Pain2D </h1>
+ 
+Pain drawings are used to collect pain data from patients. Predicting a disease based on drawn pain points on pain drawings could become an additional tool in future medicine. The idea that a patient goes to a doctor for pain and a program tells the doctor the directions of further tests or even the real disease seems very futuristic. Our long-term goal is to support the doctor in this task by digitizing and automatically classifying pain drawings. To this end, we have been researching an automated classification based on pain drawings since 2017. 
+
+Pain2D is a program that was developed for the automated classification of diseases on the basis of pain drawings in paper form for research purposes. Pain2D is currently not a diagnostic tool, but is aimed at scientists, physicians and anyone interested in the automated analysis of pain drawings.
+
+## De
+
+ <h1> Pain2D </h1>
+
+Schmerzzeichnungen werden verwendet um Schmerzen von Patienten zu erheben. Eine Krankheit anhand von gezeichneten Schmerzpunkten auf Schmerzzeichnungen vorherzusagen könnte ein zusätzliches Instrument in der zukünftigen Medizin werden. Die Vorstellung, dass ein Patient sich wegen Schmerzen zum Arzt begibt und ein Programm dem Arzt die Richtungen der weiteren Tests oder sogar die wahre Krankheit vorhersagt, wirkt sehr futuristisch. Unser langfristiges Ziel ist es, den Arzt bei dieser Aufgabe durch eine Digitalisierung und automatische Klassifizierung von Schmerzzeichnungen zu unterstützen. Hierzu forschen wir seit 2017 an einer automatisierten Klasssifizierung anhand von Schmerzzeichnugnen. 
+
+Pain2D ist ein Programm, das zur automatisierten Klassifizierung von Krankheiten anhand von Schmerzzeichnungen in Papier Form für Forschungszwecke entwickelt wurde. Es handelt sich bei Pain2D zum jetzigen Zeitpunkt um kein Diagnosetool, sondern richtet sich an WissenschaftlerinInnen, MedizinerInnen und alle, die sich für die automatisierte Analyse von Schmerzzeichnungen interessieren.
