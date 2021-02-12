@@ -1,0 +1,134 @@
+/*  preloader  */
+.sp-team-free-section{
+    overflow: hidden;
+    position: relative;
+}
+.loading {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    opacity: 1 !important;
+}
+.text-center{
+    text-align: center;
+}
+
+.sp-team-free-section .sp-team-free-area{
+    display: none;
+}
+.sp-team-free-section .sp-team-free-area.slick-initialized{
+    display: block;
+}
+.sp-team-free-section .sp-team-free-area{
+    margin-right: -24px;
+}
+.sp-team-free-section .sp-team-free-area .sp-team-member{
+    margin-right: 24px;
+}
+.sp-team-free-section .sp-team-free-area .sp-team-member:focus{
+    outline: none;
+}
+.sp-team-free-section .sp-team-free-area .sp-team-member .tf-member-image{
+    margin-bottom: 14px;
+}
+.sp-team-free-section .sp-team-free-area .sp-team-member .tf-member-name{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    margin-top: 0;
+    margin-bottom: 6px;
+    line-height: 18px;
+}
+.sp-team-free-section .sp-team-free-area .sp-team-member .tf-member-designation{
+    font-size: 15px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+.sp-team-free-section .sp-team-free-area .sp-team-member .tf-member-social-links a{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    margin: 3px;
+    font-size: 16px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.sp-team-free-section .sp-team-free-area .sp-team-member .tf-member-social-links a.tf-facebook{
+    background-color: #3b5998;
+}
+.sp-team-free-section .sp-team-free-area .sp-team-member .tf-member-social-links a.tf-twitter{
+    background-color: #1da1f2;
+}
+.sp-team-free-section .sp-team-free-area .sp-team-member .tf-member-social-links a.tf-google-plus{
+    background-color: #dd4b39;
+}
+.sp-team-free-section .sp-team-free-area .sp-team-member .tf-member-social-links a.tf-instagram{
+    background-color: #3f729b;
+}
+
+/* Dots */
+.sp-team-free-section .sp-team-free-area ul.slick-dots{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 22px;
+}
+.sp-team-free-section .sp-team-free-area ul.slick-dots li{
+    display: inline;
+}
+.sp-team-free-section .sp-team-free-area ul.slick-dots li button{
+    border: 0 solid;
+    overflow: hidden;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    text-indent: -999px;
+    background-color: #cccccc;
+    margin: 3px;
+}
+.sp-team-free-section .sp-team-free-area ul.slick-dots li button:focus{
+    outline: none;
+}
+.sp-team-free-section .sp-team-free-area ul.slick-dots li.slick-active button{
+    background-color: #459fb5;
+}
+
+/* Nav */
+.sp-team-free-section .sp-team-free-area .slick-arrow {
+    position: absolute;
+    z-index: 999;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    color: #dddddd;
+    font-size: 20px;
+    line-height: 28px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.sp-team-free-section .sp-team-free-area .slick-prev {
+    top: -45px;
+    right: 62px;
+}
+.sp-team-free-section .sp-team-free-area .slick-next {
+    top: -45px;
+    right: 24px;
+}
