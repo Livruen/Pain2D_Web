@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html class="html" lang="en-US">
+
+<!-- Mirrored from localhost/wordpress/pain2d-tool-tutorial/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Feb 2021 00:32:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<title>Pain2D-Tool-Tutorial &#8211; Pain2D</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel='dns-prefetch' href='http://translate.google.com/' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Pain2D &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Pain2D &raquo; Comments Feed" href="../comments/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.1"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../wp-includes/css/dist/block-library/style.mind96d.css?ver=5.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='../wp-includes/css/dist/block-library/theme.mind96d.css?ver=5.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='../wp-content/plugins/contact-form-7/includes/css/stylesde54.css?ver=5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='google-language-translator-css'  href='../wp-content/plugins/google-language-translator/css/styled42d.css?ver=6.0.8' type='text/css' media='' />
+<link rel='stylesheet' id='glt-toolbar-styles-css'  href='../wp-content/plugins/google-language-translator/css/toolbard42d.css?ver=6.0.8' type='text/css' media='' />
+<link rel='stylesheet' id='bodhi-svgs-attachment-css'  href='../wp-content/plugins/svg-support/css/svgs-attachmentd96d.css?ver=5.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-css'  href='../wp-content/plugins/team-free/deprecated/assets/css/slickdade.css?ver=20170420' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-min-css'  href='../wp-content/plugins/team-free/deprecated/assets/css/font-awesome.mindade.css?ver=20170420' type='text/css' media='all' />
+<link rel='stylesheet' id='team-free-style-css'  href='../wp-content/plugins/team-free/deprecated/assets/css/styledade.css?ver=20170420' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-team-css'  href='../wp-content/plugins/team-free/public/css/public.min5d0a.css?ver=2.0.7' type='text/css' media='all' />
+<link rel='stylesheet' id='uaf_client_css-css'  href='../wp-content/uploads/useanyfont/uafa69f.css?ver=1610660724' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='../wp-content/themes/oceanwp/assets/fonts/fontawesome/css/all.minaec5.css?ver=5.11.2' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-line-icons-css'  href='../wp-content/themes/oceanwp/assets/css/third/simple-line-icons.min8d5a.css?ver=2.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='../wp-content/themes/oceanwp/assets/css/third/magnific-popup.min8a54.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='oceanwp-style-css'  href='../wp-content/themes/oceanwp/assets/css/style.min8162.css?ver=1.9.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='../wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.minee95.css?ver=5.10.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-animations-css'  href='../wp-content/plugins/elementor/assets/lib/animations/animations.minb12b.css?ver=3.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-legacy-css'  href='../wp-content/plugins/elementor/assets/css/frontend-legacy.minb12b.css?ver=3.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='../wp-content/plugins/elementor/assets/css/frontend.minb12b.css?ver=3.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-74-css'  href='../wp-content/uploads/elementor/css/post-7452df.css?ver=1613422606' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-global-css'  href='../wp-content/uploads/elementor/css/global52df.css?ver=1613422606' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-334-css'  href='../wp-content/uploads/elementor/css/post-33485a7.css?ver=1613423155' type='text/css' media='all' />
+<link rel='stylesheet' id='spf-google-web-fonts-_sptp_generator-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A600%7COpen+Sans%3A600%7COpen+Sans%7COpen+Sans%3A300%7COpen+Sans%7COpen+Sans%3A400' type='text/css' media='all' />
+<link rel='stylesheet' id='oe-widgets-style-css'  href='../wp-content/plugins/ocean-extra/assets/css/widgetsd96d.css?ver=5.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CExo+2%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css'  href='../wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min9e0b.css?ver=5.15.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css'  href='../wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min9e0b.css?ver=5.15.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-brands-css'  href='../wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min9e0b.css?ver=5.15.1' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.min9d52.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" type="application/json" href="../wp-json/wp/v2/pages/334.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6.1" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../indexd06c.html?p=334' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed97d4.json?url=http%3A%2F%2Flocalhost%2Fwordpress%2Fpain2d-tool-tutorial%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embedbe02?url=http%3A%2F%2Flocalhost%2Fwordpress%2Fpain2d-tool-tutorial%2F&amp;format=xml" />
+<style type="text/css">p.hello { font-size:12px; color:darkgray; }#google_language_translator, #flags { text-align:left; }#google_language_translator { clear:both; }#flags { width:165px; }#flags a { display:inline-block; margin-right:2px; }#google_language_translator { width:auto !important; }.goog-tooltip {display: none !important;}.goog-tooltip:hover {display: none !important;}.goog-text-highlight {background-color: transparent !important; border: none !important; box-shadow: none !important;}#google_language_translator select.goog-te-combo { color:#32373c; }.goog-te-banner-frame{visibility:hidden !important;}body { top:0px !important;}#glt-translate-trigger { left:20px; right:auto; }#glt-translate-trigger > span { color:#1d2937; }#glt-translate-trigger { background:#8fd6f0; }.goog-te-gadget .goog-te-combo { width:100%; }</style><style id="mystickymenu" type="text/css">#mysticky-nav { width:100%; position: static; }#mysticky-nav.wrapfixed { position:fixed; left: 0px; margin-top:0px;  z-index: 99990; -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); opacity:1; background-color: #1d2937;}#mysticky-nav.wrapfixed .myfixed{ background-color: #1d2937; position: relative;top: auto;left: auto;right: auto;}#mysticky-nav .myfixed { margin:0 auto; float:none; border:0px; background:none; max-width:100%; }</style>			<style type="text/css">
+																															</style>
+			<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>		<style type="text/css" id="wp-custom-css">
+			#content{background:#1d2937}		</style>
+		<!-- OceanWP CSS -->
+<style type="text/css">
+/* Header CSS */#site-logo #site-logo-inner,.oceanwp-social-menu .social-menu-inner,#site-header.full_screen-header .menu-bar-inner,.after-header-content .after-header-content-inner{height:134px}#site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a,.mobile-menu-close,.after-header-content-inner >a{line-height:134px}#site-header,.has-transparent-header .is-sticky #site-header,.has-vh-transparent .is-sticky #site-header.vertical-header,#searchform-header-replace{background-color:#1d2937}#site-header{border-color:#1d2937}#site-header.has-header-media .overlay-header-media{background-color:#1d2937}#site-logo #site-logo-inner a img,#site-header.center-header #site-navigation-wrap .middle-site-logo a img{max-width:166px}#site-header #site-logo #site-logo-inner a img,#site-header.center-header #site-navigation-wrap .middle-site-logo a img{max-height:161px}.effect-one #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-three #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-five #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-five #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-nine #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-nine #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after{background-color:#f2100d}.effect-four #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:before,.effect-four #site-navigation-wrap .dropdown-menu >li >a.menu-link >span:after,.effect-seven #site-navigation-wrap .dropdown-menu >li >a.menu-link:hover >span:after,.effect-seven #site-navigation-wrap .dropdown-menu >li.sfHover >a.menu-link >span:after{color:#f2100d}.effect-seven #site-navigation-wrap .dropdown-menu >li >a.menu-link:hover >span:after,.effect-seven #site-navigation-wrap .dropdown-menu >li.sfHover >a.menu-link >span:after{text-shadow:10px 0 #f2100d,-10px 0 #f2100d}#site-navigation-wrap .dropdown-menu >li >a{padding:0 14px}#site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a,#searchform-header-replace-close{color:#8fe6f0}#site-navigation-wrap .dropdown-menu >li >a:hover,.oceanwp-mobile-menu-icon a:hover,#searchform-header-replace-close:hover{color:#f2100d}#site-navigation-wrap .dropdown-menu >.current-menu-item >a,#site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a,#site-navigation-wrap .dropdown-menu >.current-menu-item >a:hover,#site-navigation-wrap .dropdown-menu >.current-menu-ancestor >a:hover{color:#f2100d}.dropdown-menu .sub-menu{min-width:187px}.dropdown-menu .sub-menu,#searchform-dropdown,.current-shop-items-dropdown{background-color:#1d2937}.dropdown-menu .sub-menu,#searchform-dropdown,.current-shop-items-dropdown{border-color:#1d2937}.dropdown-menu ul li.menu-item,.navigation >ul >li >ul.megamenu.sub-menu >li,.navigation .megamenu li ul.sub-menu{border-color:rgba(221,51,51,0)}.dropdown-menu ul li a.menu-link{color:#8fe6f0}.dropdown-menu ul li a.menu-link:hover{color:#f2100d}.dropdown-menu ul li a.menu-link:hover{background-color:#1d2937}.navigation li.mega-cat .mega-cat-title{background-color:#dd3333}.navigation li.mega-cat .mega-cat-title{color:#dd3333}/* Typography CSS */#site-logo a.site-logo-text{line-height:1.7}#site-navigation-wrap .dropdown-menu >li >a,#site-header.full_screen-header .fs-dropdown-menu >li >a,#site-header.top-header #site-navigation-wrap .dropdown-menu >li >a,#site-header.center-header #site-navigation-wrap .dropdown-menu >li >a,#site-header.medium-header #site-navigation-wrap .dropdown-menu >li >a,.oceanwp-mobile-menu-icon a{font-weight:600;font-size:15px;letter-spacing:.7px}
+</style></head>
+
+<body class="page-template-default page page-id-334 wp-custom-logo wp-embed-responsive oceanwp-theme dropdown-mobile no-header-border default-breakpoint content-full-screen page-header-disabled has-breadcrumbs elementor-default elementor-kit-74 elementor-page elementor-page-334" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+	
+	
+	<div id="outer-wrap" class="site clr">
+
+		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+		
+		<div id="wrap" class="clr">
+
+			
+			
+<header id="site-header" class="minimal-header effect-one clr" data-height="134" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
+
+	
+					
+			<div id="site-header-inner" class="clr container">
+
+				
+				
+
+<div id="site-logo" class="clr" itemscope itemtype="https://schema.org/Brand" >
+
+	
+	<div id="site-logo-inner" class="clr">
+
+		<a href="../index.html" class="custom-logo-link" rel="home"><img width="1663" height="1343" src="../wp-content/uploads/2021/02/logo_pain2d_software.png" class="custom-logo" alt="Pain2D" srcset="http://localhost/wordpress/wp-content/uploads/2021/02/logo_pain2d_software.png 1663w, http://localhost/wordpress/wp-content/uploads/2021/02/logo_pain2d_software-300x242.png 300w, http://localhost/wordpress/wp-content/uploads/2021/02/logo_pain2d_software-1024x827.png 1024w, http://localhost/wordpress/wp-content/uploads/2021/02/logo_pain2d_software-768x620.png 768w, http://localhost/wordpress/wp-content/uploads/2021/02/logo_pain2d_software-1536x1240.png 1536w" sizes="(max-width: 1663px) 100vw, 1663px" /></a>
+	</div><!-- #site-logo-inner -->
+
+	
+	
+</div><!-- #site-logo -->
+
+			<div id="site-navigation-wrap" class="clr">
+			
+			
+			
+			<nav id="site-navigation" class="navigation main-navigation clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation" >
+
+				<ul id="menu-header" class="main-menu dropdown-menu sf-menu"><li id="menu-item-93" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-93"><a href="../index.html" class="menu-link"><span class="text-wrap">Home</span></a></li><li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a href="../team/index.html" class="menu-link"><span class="text-wrap">Team</span></a></li><li id="menu-item-219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-219"><a href="../research/index.html" class="menu-link"><span class="text-wrap">Research</span></a></li><li id="menu-item-220" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children dropdown menu-item-220"><a href="../tutorial/index.html" class="menu-link"><span class="text-wrap">Tutorial <span class="nav-arrow fa fa-angle-down"></span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-2320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2320"><a href="../member1/index.html" class="menu-link"><span class="text-wrap">How to collect data</span></a></li>	<li id="menu-item-1924" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1924"><a href="../pain2d-designer-tutorial/index.html" class="menu-link"><span class="text-wrap">Pain2D-Designer</span></a></li>	<li id="menu-item-1925" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-334 current_page_item menu-item-1925"><a href="index.html" class="menu-link"><span class="text-wrap">Pain2D-Tool</span></a></li>	<li id="menu-item-1926" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1926"><a href="../pain2d-tablet-tutorial/index.html" class="menu-link"><span class="text-wrap">Pain2D-Tablet</span></a></li></ul>
+</li><li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-260"><a href="../download/index.html" class="menu-link"><span class="text-wrap">Download</span></a></li></ul>
+			</nav><!-- #site-navigation -->
+
+			
+			
+					</div><!-- #site-navigation-wrap -->
+			
+		
+	
+				
+	<div class="oceanwp-mobile-menu-icon clr mobile-right">
+
+		
+		
+		
+		<a href="javascript:void(0)" class="mobile-menu"  aria-label="Mobile Menu">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+								<span class="oceanwp-text">Menu</span>
+				<span class="oceanwp-close-text">Close</span>
+						</a>
+
+		
+		
+		
+	</div><!-- #oceanwp-mobile-menu-navbar -->
+
+
+			</div><!-- #site-header-inner -->
+
+			
+<div id="mobile-dropdown" class="clr" >
+
+	<nav class="clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+
+		<ul id="menu-header-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-93"><a href="../index.html">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a href="../team/index.html">Team</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-219"><a href="../research/index.html">Research</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-220"><a href="../tutorial/index.html">Tutorial</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2320"><a href="../member1/index.html">How to collect data</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1924"><a href="../pain2d-designer-tutorial/index.html">Pain2D-Designer</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-334 current_page_item menu-item-1925"><a href="index.html" aria-current="page">Pain2D-Tool</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1926"><a href="../pain2d-tablet-tutorial/index.html">Pain2D-Tablet</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-260"><a href="../download/index.html">Download</a></li>
+</ul>
+<div id="mobile-menu-search" class="clr">
+	<form method="get" action="http://localhost/wordpress/" class="mobile-searchform" role="search" aria-label="Search for:">
+		<label for="ocean-mobile-search1">
+			<input type="search" name="s" autocomplete="off" placeholder="Search" />
+			<button type="submit" class="searchform-submit" aria-label="Submit Search">
+				<i class="icon icon-magnifier" aria-hidden="true"></i>
+			</button>
+					</label>
+			</form>
+</div><!-- .mobile-menu-search -->
+
+	</nav>
+
+</div>
+
+			
+			
+		
+		
+</header><!-- #site-header -->
+
+
+			
+			<main id="main" class="site-main clr"  role="main">
+
+				
+	
+	<div id="content-wrap" class="container clr">
+
+		
+		<div id="primary" class="content-area clr">
+
+			
+			<div id="content" class="site-content clr">
+
+				
+				
+<article class="single-page-article clr">
+
+	
+<div class="entry clr" itemprop="text">
+
+	
+			<div data-elementor-type="wp-page" data-elementor-id="334" class="elementor elementor-334" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-b9f1703 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b9f1703" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a8724e7" data-id="a8724e7" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-a4493b6 elementor-widget elementor-widget-spacer" data-id="a4493b6" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d9416f7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d9416f7" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-d886f87" data-id="d886f87" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-a6c8a34 elementor-widget elementor-widget-spacer" data-id="a6c8a34" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-a9d90fa elementor-invisible elementor-widget elementor-widget-heading" data-id="a9d90fa" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Video Tutorial</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a645c55 elementor-invisible elementor-widget elementor-widget-heading" data-id="a645c55" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-xl">Getting Started with <br>Pain2D-Tool</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5f0af6a elementor-invisible elementor-widget elementor-widget-text-editor" data-id="5f0af6a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="color: #ffffff;">Pain2D-Tool allows to generate pain profiles (pain frequency maps), generating statistics for validation and comparison of the proposed models: Binary and KD-classifier.</span></p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-9ba894c elementor-widget elementor-widget-button" data-id="9ba894c" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="../download/index.html" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-right">
+				<i aria-hidden="true" class="fas fa-chevron-circle-right"></i>			</span>
+						<span class="elementor-button-text">Go to Download</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-fefe767" data-id="fefe767" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-54183a6 elementor-widget elementor-widget-spacer" data-id="54183a6" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-a16fde1 elementor-aspect-ratio-169 elementor-widget elementor-widget-video" data-id="a16fde1" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=CQW0r6qedPo&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;,&quot;aspect_ratio&quot;:&quot;169&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+			<div class="elementor-video"></div>		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3450b18 elementor-widget elementor-widget-spacer" data-id="3450b18" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-eb19edc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="eb19edc" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-07b4bd5" data-id="07b4bd5" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-70fdb13 elementor-widget elementor-widget-spacer" data-id="70fdb13" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-70284f9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="70284f9" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dd2f82d" data-id="dd2f82d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-690ad6c elementor-widget elementor-widget-heading" data-id="690ad6c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-xl">Pain2D-Tool Tutorial</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-20fbb68 elementor-widget elementor-widget-text-editor" data-id="20fbb68" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="color: #ffffff;">In this tutorial the use of Pain2D is 
+explained step by step. The tutorial is suitable for everyone who is 
+interested in analyzing pain drawings.</span></p>
+<p><span style="color: #ffffff;">Before you start, download Pain2D and note the requirements of the program. For further information please see Download.</span></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-34b2bb3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="34b2bb3" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-205cea9" data-id="205cea9" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-c62d59a animated-fast elementor-invisible elementor-widget elementor-widget-heading" data-id="c62d59a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-large">Table of contents</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5790076 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="5790076" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><ul><li><span style="color: #ffffff; font-size: 18pt;"><a style="background-color: #1d2937; color: #ffffff;" href="#scan">Setting template pain drawing<br /></a></span></li><li><span style="color: #ffffff; font-size: 18pt;"><a style="color: #ffffff;" href="#pain points">Extraction of pain points from a pain drawing</a></span></li><li><span style="color: #ffffff; font-size: 18pt;"><a style="color: #ffffff;" href="#pain profile">Pain profiles<br /></a></span></li><li><span style="color: #ffffff; font-size: 18pt;"><a style="color: #ffffff;" href="#auc">AUC &#8211; Use of the binary classifier</a></span></li><li><span style="color: #ffffff; font-size: 18pt;"><a style="color: #ffffff;" href="#kdc">KDC &#8211; Use of the k-disease classifier</a></span></li></ul></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-d52b508" data-id="d52b508" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ec454cb elementor-widget elementor-widget-image" data-id="ec454cb" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="498" src="../wp-content/uploads/2021/02/PDTool-1024x498.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/02/PDTool-1024x498.png 1024w, http://localhost/wordpress/wp-content/uploads/2021/02/PDTool-300x146.png 300w, http://localhost/wordpress/wp-content/uploads/2021/02/PDTool-768x374.png 768w, http://localhost/wordpress/wp-content/uploads/2021/02/PDTool.png 1139w" sizes="(max-width: 1024px) 100vw, 1024px" />											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c03a9f6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c03a9f6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-626a1ba" data-id="626a1ba" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ae8e5c1 elementor-widget elementor-widget-spacer" data-id="ae8e5c1" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-ec9f264 animated-fast elementor-invisible elementor-widget elementor-widget-heading" data-id="ec9f264" data-element_type="widget" id="scan" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-large">Setting template pain drawing</h1>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4cdc8a7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4cdc8a7" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-b93e4b8" data-id="b93e4b8" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7389ef0 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="7389ef0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="color: #f5f5f5;">First start with uploading the template pain drawing <b>as ZIP-file</b>, which you created with <b>Pain2D-Designer</b>. <br /></span></p><p><span style="color: #f5f5f5;">You can either select it with the “Browse..”-Button or just simply use Drag-and-Drop from your file system.</span></p><p><span style="color: #f5f5f5;">Then click on “Submit”.</span></p><p><span style="color: #f5f5f5;">You can now see the uploaded template on the web page.</span></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-5598873" data-id="5598873" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4229b2c elementor-widget elementor-widget-image" data-id="4229b2c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="502" height="599" src="../wp-content/uploads/2021/02/TPD.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/02/TPD.png 502w, http://localhost/wordpress/wp-content/uploads/2021/02/TPD-251x300.png 251w" sizes="(max-width: 502px) 100vw, 502px" />											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-96f02f2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="96f02f2" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c833e76" data-id="c833e76" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f526e15 elementor-widget elementor-widget-spacer" data-id="f526e15" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-d97f3dc animated-fast elementor-invisible elementor-widget elementor-widget-heading" data-id="d97f3dc" data-element_type="widget" id="pain points" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-large">Extraction of pain points from a pain drawing</h1>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d5e3369 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d5e3369" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-802d58f" data-id="802d58f" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-c4b48b2 elementor-widget elementor-widget-text-editor" data-id="c4b48b2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="color: #ffffff;">The first function is the extraction of the pain points from the <b>scanned pen-and-paper pain drawings</b>.  Select all of your pain drawings and upload them. Again u can use Drag-andDrop or the “Browse”-Button.</span></p><p><b><span style="color: #ffffff;">It is <u>important</u> to pseudonymize the scanned files. Please use the pattern “disease abbreviation_pain drawing number.pdf<br /></span></b></p><p><b><span style="color: #ffffff;">! For more Details how to scan pain drawings visit the Collect data Tutorial.</span></b></p><p> </p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-727e068 elementor-widget elementor-widget-button" data-id="727e068" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="../download/index.html" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-right">
+				<i aria-hidden="true" class="fas fa-chevron-circle-right"></i>			</span>
+						<span class="elementor-button-text">How to collect data</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f6d012c elementor-widget elementor-widget-spacer" data-id="f6d012c" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-c882406 elementor-widget elementor-widget-image" data-id="c882406" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="695" height="195" src="../wp-content/uploads/2021/02/Pseudonymization.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/02/Pseudonymization.png 695w, http://localhost/wordpress/wp-content/uploads/2021/02/Pseudonymization-300x84.png 300w" sizes="(max-width: 695px) 100vw, 695px" />											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-a8cf806" data-id="a8cf806" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7ad3491 elementor-widget elementor-widget-image" data-id="7ad3491" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="541" src="../wp-content/uploads/2021/01/UG_Y4WQTU8GRDPSWJF7-1024x541.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/01/UG_Y4WQTU8GRDPSWJF7-1024x541.png 1024w, http://localhost/wordpress/wp-content/uploads/2021/01/UG_Y4WQTU8GRDPSWJF7-300x159.png 300w, http://localhost/wordpress/wp-content/uploads/2021/01/UG_Y4WQTU8GRDPSWJF7-768x406.png 768w, http://localhost/wordpress/wp-content/uploads/2021/01/UG_Y4WQTU8GRDPSWJF7.png 1270w" sizes="(max-width: 1024px) 100vw, 1024px" />											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-70259fd elementor-widget elementor-widget-spacer" data-id="70259fd" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5d550fb elementor-widget elementor-widget-text-editor" data-id="5d550fb" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="color: #ffffff;">Once the upload has finished, click on the “Submit”-Button.</span></p><p><span style="color: #ffffff;">You can see a progress bar in the bottom right corner of the window. This might take a while, so we just need to be patient.</span></p><p><span style="color: #ffffff;">If you got a warning, that some of the pain drawings are not readable, that means they are not properly filled in. For more Details see the &#8216;How to collect data tutorial&#8217;<br /></span></p><p><span style="color: #ffffff;">If all your drawings are fine, you get a message says: “ Finished extraction. Please Download the files.”</span></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2c15b06 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2c15b06" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-96dbb57" data-id="96dbb57" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-daf463b elementor-widget elementor-widget-spacer" data-id="daf463b" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3680971 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="3680971" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="color: #f5f5f5;">You can now download the extracted points in a ZIP-file.</span></p><p><span style="color: #f5f5f5;">When you unpack the downloaded ZIP-file you can see it contains a corresponding <b>JSON-file</b> for each of the pain drawings.<br /></span></p><p><span style="color: #f5f5f5;"> </span></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-f0492ca" data-id="f0492ca" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-543e67c elementor-widget elementor-widget-spacer" data-id="543e67c" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-a56614c elementor-widget elementor-widget-image" data-id="a56614c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="538" src="../wp-content/uploads/2021/01/N8958PX0F78305S%407-1024x538.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/01/N8958PX0F78305S@7-1024x538.png 1024w, http://localhost/wordpress/wp-content/uploads/2021/01/N8958PX0F78305S@7-300x158.png 300w, http://localhost/wordpress/wp-content/uploads/2021/01/N8958PX0F78305S@7-768x403.png 768w, http://localhost/wordpress/wp-content/uploads/2021/01/N8958PX0F78305S@7.png 1268w" sizes="(max-width: 1024px) 100vw, 1024px" />											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f8bf0c0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f8bf0c0" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-39737fb" data-id="39737fb" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-d2bf2a2 elementor-widget elementor-widget-spacer" data-id="d2bf2a2" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-c9bfd44 elementor-widget elementor-widget-heading" data-id="c9bfd44" data-element_type="widget" id="pain profile" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-large">Pain profiles</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-cc3d421 elementor-widget elementor-widget-spacer" data-id="cc3d421" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ceca341 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ceca341" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2ab35fd" data-id="2ab35fd" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ebd1c61 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="ebd1c61" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="color: #f2f2f2;">With the extracted pain  points you can now create a pain profile.</span></p><p><span style="color: #f2f2f2;">To do that, select all of the JSON-files  and upload them via the “Create pain profile”-area.</span></p><p><span style="color: #f2f2f2;">When the Upload is complete press the “Confirm”-Button.</span></p><p><span style="color: #f2f2f2;">Again, you can see the progress is running in the bottom right corner of the window.</span></p><p><span style="color: #f2f2f2;">You can now select between three different color-schemas: Gray, Blue-Yellow-Red or Red-Yellow-Blue.<br /></span></p><div> </div></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-d17b5c8 elementor-widget elementor-widget-image" data-id="d17b5c8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="589" src="../wp-content/uploads/2021/02/PP2-1024x589.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/02/PP2-1024x589.png 1024w, http://localhost/wordpress/wp-content/uploads/2021/02/PP2-300x173.png 300w, http://localhost/wordpress/wp-content/uploads/2021/02/PP2-768x442.png 768w, http://localhost/wordpress/wp-content/uploads/2021/02/PP2.png 1039w" sizes="(max-width: 1024px) 100vw, 1024px" />											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-2f1935d" data-id="2f1935d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-89dd1a3 elementor-widget elementor-widget-image" data-id="89dd1a3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="595" src="../wp-content/uploads/2021/02/PP1-1024x595.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/02/PP1-1024x595.png 1024w, http://localhost/wordpress/wp-content/uploads/2021/02/PP1-300x174.png 300w, http://localhost/wordpress/wp-content/uploads/2021/02/PP1-768x447.png 768w, http://localhost/wordpress/wp-content/uploads/2021/02/PP1.png 1032w" sizes="(max-width: 1024px) 100vw, 1024px" />											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1c720e5 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="1c720e5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="color: #ffffff;"> </span></p><p><span style="color: #ffffff;">Above the pain profile  is a slider called &#8220;disease agreement&#8221;. This sets the percentage threshold for the amount of patients, that marked more then x% of the points. For example 31% will display all pain points that 31% or more patients have marked on pain drawings you just uploaded.  <br /></span></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-cc7da3c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cc7da3c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5159598" data-id="5159598" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-2bbf20d animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="2bbf20d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="color: #ffffff;">You can save your pain profile to not create it each time you start the program. For that click on the “Download data”-Button. The Pain profile will be saved as a csv-File.</span></p><p><span style="color: #ffffff;">By clicking on the “Download PNG”-Button you can also download the pain profile as a PNG-file.  <br /></span></p><p><span style="color: #ffffff;">After it finished downloading, you will see this image generated by Pain2D-Tool. This may be used and uploaded freely. So you can use this image wherever you want, for example in your publications.</span></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9aa1b55 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9aa1b55" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-eb4b80a" data-id="eb4b80a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-c82b335 elementor-widget elementor-widget-image" data-id="c82b335" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="479" height="342" src="../wp-content/uploads/2021/02/PPCSv.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/02/PPCSv.png 479w, http://localhost/wordpress/wp-content/uploads/2021/02/PPCSv-300x214.png 300w" sizes="(max-width: 479px) 100vw, 479px" />											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-563f043 elementor-widget elementor-widget-heading" data-id="563f043" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">CSV</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ef407b5" data-id="ef407b5" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-0466beb elementor-widget elementor-widget-image" data-id="0466beb" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="433" height="511" src="../wp-content/uploads/2021/02/PP2png.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/02/PP2png.png 433w, http://localhost/wordpress/wp-content/uploads/2021/02/PP2png-254x300.png 254w" sizes="(max-width: 433px) 100vw, 433px" />											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-0bb9c84 elementor-widget elementor-widget-heading" data-id="0bb9c84" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">PNG</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b69f3de elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b69f3de" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a47fbb2" data-id="a47fbb2" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1837227 elementor-widget elementor-widget-spacer" data-id="1837227" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-b8a45d0 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="b8a45d0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="color: #f5f5f5;">You also have the option to upload an existing pain profile in a CSV-File.</span></p><p><span style="color: #f5f5f5;">Please remember, that you need to upload a template pain drawing first.</span></p><p><span style="color: #f5f5f5;">Simply select the pain profile (csv-File) in the “Load pain profile”-area and hit “confirm”.</span></p><p><span style="color: #f5f5f5;">The uploaded pain profile will be displayed and you can again choose a preferable color-schema.</span></p><p><span style="color: #f5f5f5;"> </span></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-9358511" data-id="9358511" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1b60cd2 elementor-widget elementor-widget-spacer" data-id="1b60cd2" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-c718dfd elementor-widget elementor-widget-image" data-id="c718dfd" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="855" height="416" src="../wp-content/uploads/2021/02/PP3.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/02/PP3.png 855w, http://localhost/wordpress/wp-content/uploads/2021/02/PP3-300x146.png 300w, http://localhost/wordpress/wp-content/uploads/2021/02/PP3-768x374.png 768w" sizes="(max-width: 855px) 100vw, 855px" />											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-50575fc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="50575fc" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-06999aa" data-id="06999aa" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-9916859 elementor-widget elementor-widget-spacer" data-id="9916859" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-b71bec5 elementor-widget elementor-widget-heading" data-id="b71bec5" data-element_type="widget" id="auc" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-large">AUC - Use of the binary classifier</h1>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7566ad6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7566ad6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-32f1656" data-id="32f1656" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-8824645 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="8824645" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="color: #f2f2f2;">If you need a binary prediction for two diseases you can use the AUC-tab in Pain2D-Tool. </span></p><p><span style="font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit; color: #f2f2f2;">Type in the name of both diseases you want to predict a</span><span style="font-size: 20px; color: #f2f2f2;">nd upload the corresponding pain points as JSON files.</span></p><p><span style="font-size: 20px; color: #f2f2f2;">Pain2D-Tool is not a diagnostic tool. To get to know what the program is generating please read our publication (go to -&gt; research).<br /></span></p><p><span style="color: #f2f2f2;">Please keep in mind, that you need to extract the pain points first in the extraction tab. </span><span style="color: #f2f2f2; font-size: 20px;">It is very important, that the <b>name of the disease</b> you gave is<u> equal </u>to the <b>name of the JSON-files</b>!</span></p><p><span style="color: #f2f2f2;">Click on the “Submit”-Button to generate the confusion matrix.</span></p><p><span style="color: #f2f2f2; font-family: 'Exo 2', sans-serif; font-size: 20px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;">And here we see the fisher’s exact Test -results as well as the ROC with the AUC-value.</span><span style="color: #f2f2f2;"><br /></span></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-b0e19a3" data-id="b0e19a3" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-699bc5c elementor-widget elementor-widget-image" data-id="699bc5c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="896" height="601" src="../wp-content/uploads/2021/02/AUC.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/02/AUC.png 896w, http://localhost/wordpress/wp-content/uploads/2021/02/AUC-300x201.png 300w, http://localhost/wordpress/wp-content/uploads/2021/02/AUC-768x515.png 768w" sizes="(max-width: 896px) 100vw, 896px" />											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c49a9fb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c49a9fb" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-b184de9" data-id="b184de9" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1be6bc8 elementor-widget elementor-widget-image" data-id="1be6bc8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="373" height="508" src="../wp-content/uploads/2021/02/saveROC.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/02/saveROC.png 373w, http://localhost/wordpress/wp-content/uploads/2021/02/saveROC-220x300.png 220w" sizes="(max-width: 373px) 100vw, 373px" />											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-ba42637 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="ba42637" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="color: #f2f2f2; font-size: 20px;"> </span></p><p><span style="color: #f2f2f2; font-size: 20px;"> </span></p><p><span style="color: #f2f2f2; font-size: 20px;"> </span></p><p><span style="color: #f2f2f2; font-size: 20px;">The test results can be downloaded as a csv-file when you click on the “Download CSV”-Button.</span></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-78f948e" data-id="78f948e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4ef4740 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="4ef4740" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="color: #f2f2f2; font-size: 20px;"> </span></p><p><br /><span style="color: #f2f2f2; font-size: 20px;"><span style="color: #f2f2f2; font-size: 20px;">You can download the ROC &#8211; Image by just right-clicking on it and click on “save as”.</span></span></p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-4b0f188 elementor-widget elementor-widget-spacer" data-id="4b0f188" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-84e8ee5 elementor-widget elementor-widget-image" data-id="84e8ee5" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="446" height="289" src="../wp-content/uploads/2021/02/AUCTable.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/02/AUCTable.png 446w, http://localhost/wordpress/wp-content/uploads/2021/02/AUCTable-300x194.png 300w" sizes="(max-width: 446px) 100vw, 446px" />											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-54fd09b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="54fd09b" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2c7d33a" data-id="2c7d33a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-d458f35 elementor-widget elementor-widget-spacer" data-id="d458f35" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3fb25f8 elementor-widget elementor-widget-heading" data-id="3fb25f8" data-element_type="widget" id="kdc" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-large">KDC - Use of the k-disease classifier</h1>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b7a58a2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b7a58a2" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-334499e" data-id="334499e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-de5d4cb animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="de5d4cb" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="color: #f2f2f2;">Similar to the AUC-function is the KDC-function, where you can make classifications of more then two diseases.</span></p><p><span style="font-variant-ligatures: normal; font-variant-caps: normal; font-family: 'Exo 2', sans-serif; font-size: 20px; font-style: normal; font-weight: 400; color: #ffffff;">For that just click the “Add disease”-Button. </span></p><p><span style="color: #ffffff;">A<u><b>gain, the name of the disease you gave should be same as the name of the JSON-files!</b></u></span></p><p><br /><span style="color: #ffffff;"><u><b><span style="color: #f2f2f2;">Click on the “Submit”-Button. The files will be loaded and the result will be calculated, as you can see in the bottom right corner.</span></b></u></span></p><div> </div></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-3264e03" data-id="3264e03" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-84dffa8 elementor-widget elementor-widget-image" data-id="84dffa8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="429" height="605" src="../wp-content/uploads/2021/02/5.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/02/5.png 429w, http://localhost/wordpress/wp-content/uploads/2021/02/5-213x300.png 213w" sizes="(max-width: 429px) 100vw, 429px" />											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-369110f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="369110f" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6b694ec" data-id="6b694ec" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f53d3f5 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor" data-id="f53d3f5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><br /><span style="color: #f2f2f2;"><span style="color: #ffffff;">You can download the results by clicking the “Download CSV”-Button. The downloaded csv file should look like this.</span></span></p><p><span style="color: #f2f2f2;"> </span></p><div> </div></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-fceb03d elementor-widget elementor-widget-spacer" data-id="fceb03d" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-d006549 elementor-widget elementor-widget-image" data-id="d006549" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="537" src="../wp-content/uploads/2021/01/%40OS06C4MFUEF1PGMV65-1024x537.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/01/@OS06C4MFUEF1PGMV65-1024x537.png 1024w, http://localhost/wordpress/wp-content/uploads/2021/01/@OS06C4MFUEF1PGMV65-300x157.png 300w, http://localhost/wordpress/wp-content/uploads/2021/01/@OS06C4MFUEF1PGMV65-768x403.png 768w, http://localhost/wordpress/wp-content/uploads/2021/01/@OS06C4MFUEF1PGMV65.png 1272w" sizes="(max-width: 1024px) 100vw, 1024px" />											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-85b3cf4" data-id="85b3cf4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ee931d7 elementor-widget elementor-widget-image" data-id="ee931d7" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="553" height="416" src="../wp-content/uploads/2021/02/KDC.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/02/KDC.png 553w, http://localhost/wordpress/wp-content/uploads/2021/02/KDC-300x226.png 300w" sizes="(max-width: 553px) 100vw, 553px" />											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-d981796 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="d981796" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="color: #f2f2f2;"> </span></p><p><span style="color: #f2f2f2;">The confusion matrix will be displayed as the result.</span></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-054fb3d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="054fb3d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dc914ea" data-id="dc914ea" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5708324 elementor-widget elementor-widget-spacer" data-id="5708324" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-00df14c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="00df14c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ca75072" data-id="ca75072" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-2bc30dc elementor-widget elementor-widget-spacer" data-id="2bc30dc" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0802869 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="0802869" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-27e50c7" data-id="27e50c7" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-59aacc6 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="59aacc6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-6d2a49b" data-id="6d2a49b" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5d7578d elementor-widget elementor-widget-image" data-id="5d7578d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1022" height="1024" src="../wp-content/uploads/2021/01/logo_pain2d_software_dark-1022x1024.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://localhost/wordpress/wp-content/uploads/2021/01/logo_pain2d_software_dark-1022x1024.png 1022w, http://localhost/wordpress/wp-content/uploads/2021/01/logo_pain2d_software_dark-300x300.png 300w, http://localhost/wordpress/wp-content/uploads/2021/01/logo_pain2d_software_dark-150x150.png 150w, http://localhost/wordpress/wp-content/uploads/2021/01/logo_pain2d_software_dark-768x770.png 768w, http://localhost/wordpress/wp-content/uploads/2021/01/logo_pain2d_software_dark-1532x1536.png 1532w, http://localhost/wordpress/wp-content/uploads/2021/01/logo_pain2d_software_dark-2043x2048.png 2043w" sizes="(max-width: 1022px) 100vw, 1022px" />											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-49d264f" data-id="49d264f" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-30bf284 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-heading" data-id="30bf284" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-medium">Software</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-0c2ea6e elementor-invisible elementor-widget elementor-widget-heading" data-id="0c2ea6e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-small"><a href="../pain2d-tool/index.html">Pain2D-Tool                                          </a></h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-690056a elementor-invisible elementor-widget elementor-widget-heading" data-id="690056a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-small"><a href="../pain2d-tablet/index.html"><br>Pain2D-Tablet    </a></h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-adc2ab9 elementor-invisible elementor-widget elementor-widget-heading" data-id="adc2ab9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-small"><a href="../pain2d-designer/index.html"><br>Pain2D-Designer          </a></h3>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-52b1b92" data-id="52b1b92" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-619fd13 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-heading" data-id="619fd13" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-medium">Ressource</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1b2db65 elementor-invisible elementor-widget elementor-widget-heading" data-id="1b2db65" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-small">Open Source                                 </h3>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-b0735b9" data-id="b0735b9" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-dd2584e elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-heading" data-id="dd2584e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-medium">Contact</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-fec49d2 elementor-invisible elementor-widget elementor-widget-heading" data-id="fec49d2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-small">Email                              </h3>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5bee679 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5bee679" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-0f8f873" data-id="0f8f873" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-c8436b3 elementor-shape-circle e-grid-align-left elementor-widget__width-auto elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="c8436b3" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-github elementor-repeater-item-ba5664c" href="https://github.com/Livruen" target="_blank">
+						<span class="elementor-screen-only">Github</span>
+						<i class="fab fa-github"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-f9f0078" href="https://www.youtube.com/channel/UCEAblTBiW7qRyFfsFTizTYQ" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<i class="fab fa-youtube"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-android elementor-repeater-item-2b9c5d5" target="_blank">
+						<span class="elementor-screen-only">Android</span>
+						<i class="fab fa-android"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-envelope elementor-repeater-item-2a516c8" target="_blank">
+						<span class="elementor-screen-only">Envelope</span>
+						<i class="fas fa-envelope"></i>					</a>
+				</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-c76b134 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="c76b134" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="../wp-content/uploads/2021/01/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d47504c76332d626c75652e737667.svg" class="attachment-large size-large" alt="" loading="lazy" height="100" width="100" />											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1f709fb elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="1f709fb" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-a317f8e elementor-widget elementor-widget-text-editor" data-id="a317f8e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="font-family: Roboto, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; color: #ffffff;">Copyright © 2020, Natasza Szczypien and Frank Klawonn</span></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-12f7615" data-id="12f7615" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		
+	
+</div>
+
+</article>
+
+				
+			</div><!-- #content -->
+
+			
+		</div><!-- #primary -->
+
+		
+	</div><!-- #content-wrap -->
+
+	
+
+	</main><!-- #main -->
+
+	
+	
+	
+		
+	
+	
+</div><!-- #wrap -->
+
+
+</div><!-- #outer-wrap -->
+
+
+
+<a id="scroll-top" class="scroll-top-right" href="#"><span class="fa fa-angle-up" aria-label="Scroll to the top of the page"></span></a>
+
+
+
+
+<div id="glt-translate-trigger"><span class="notranslate">Translate »</span></div><div id="glt-toolbar"></div><div id="flags" style="display:none" class="size18"><ul id="sortable" class="ui-sortable"><li id="English"><a href="#" title="English" class="nturl notranslate en flag united-states"></a></li><li id="German"><a href="#" title="German" class="nturl notranslate de flag German"></a></li></ul></div><div id='glt-footer'><div id="google_language_translator" class="default-language-en"></div></div><script>function GoogleLanguageTranslatorInit() { new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages:'en,de', autoDisplay: false}, 'google_language_translator');}</script><script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/localhost\/wordpress\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/scriptsde54.js?ver=5.3' id='contact-form-7-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/google-language-translator/js/scriptsd42d.js?ver=6.0.8' id='scripts-js'></script>
+<script type='text/javascript' src='../../../translate.google.com/translate_a/elementcd15.html?cb=GoogleLanguageTranslatorInit' id='scripts-google-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/mystickymenu/js/detectmobilebrowser3575.js?ver=2.4.7' id='detectmobilebrowser-js'></script>
+<script type='text/javascript' id='mystickymenu-js-extra'>
+/* <![CDATA[ */
+var option = {"mystickyClass":"header#site-header","activationHeight":"200","disableWidth":"0","disableLargeWidth":"0","adminBar":"false","device_desktop":"1","device_mobile":"1","mystickyTransition":"slide","mysticky_disable_down":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/mystickymenu/js/mystickymenu.min3575.js?ver=2.4.7' id='mystickymenu-js'></script>
+<script type='text/javascript' id='bodhi_svg_inline-js-extra'>
+/* <![CDATA[ */
+var cssTarget = {"Bodhi":"img.style-svg","ForceInlineSVG":"style-svg"};
+var ForceInlineSVGActive = "true";
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/svg-support/js/svgs-inline8a54.js?ver=1.0.0' id='bodhi_svg_inline-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/team-free/deprecated/assets/js/slick.mindade.js?ver=20170420' id='slick-min-js-js'></script>
+<script type='text/javascript' src='../wp-includes/js/imagesloaded.mineda1.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' src='../wp-content/themes/oceanwp/assets/js/third/magnific-popup.min8162.js?ver=1.9.0' id='magnific-popup-js'></script>
+<script type='text/javascript' src='../wp-content/themes/oceanwp/assets/js/third/lightbox.min8162.js?ver=1.9.0' id='oceanwp-lightbox-js'></script>
+<script type='text/javascript' id='oceanwp-main-js-extra'>
+/* <![CDATA[ */
+var oceanwpLocalize = {"isRTL":"","menuSearchStyle":"disabled","sidrSource":null,"sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"link","verticalHeaderTarget":"link","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select","ajax_url":"http:\/\/localhost\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/oceanwp/assets/js/main.min8162.js?ver=1.9.0' id='oceanwp-main-js'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.mind96d.js?ver=5.6.1' id='wp-embed-js'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://localhost/wordpress/wp-content/themes/oceanwp/assets/js/third/html5.min.js?ver=1.9.0' id='html5shiv-js'></script>
+<![endif]-->
+<script type='text/javascript' src='../wp-content/plugins/elementor/assets/js/webpack.runtime.minb12b.js?ver=3.1.1' id='elementor-webpack-runtime-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/elementor/assets/js/frontend-modules.minb12b.js?ver=3.1.1' id='elementor-frontend-modules-js'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/ui/core.min35d0.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/elementor/assets/lib/dialog/dialog.mina288.js?ver=4.8.1' id='elementor-dialog-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/elementor/assets/lib/share-link/share-link.minb12b.js?ver=3.1.1' id='share-link-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/elementor/assets/lib/swiper/swiper.min48f5.js?ver=5.3.6' id='swiper-js'></script>
+<script type='text/javascript' id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false,"isImprovedAssetsLoading":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.1.1","is_static":false,"experimentalFeatures":[],"urls":{"assets":"http:\/\/localhost\/wordpress\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":334,"title":"Pain2D-Tool-Tutorial%20%E2%80%93%20Pain2D","excerpt":"","featuredImage":false}};
+</script>
+<script type='text/javascript' src='../wp-content/plugins/elementor/assets/js/frontend.minb12b.js?ver=3.1.1' id='elementor-frontend-js'></script>
+<script type='text/javascript' src='../wp-content/plugins/elementor/assets/js/preloaded-elements-handlers.minb12b.js?ver=3.1.1' id='preloaded-elements-handlers-js'></script>
+</body>
+
+<!-- Mirrored from localhost/wordpress/pain2d-tool-tutorial/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Feb 2021 00:32:38 GMT -->
+</html>
